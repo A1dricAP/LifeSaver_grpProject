@@ -4,11 +4,20 @@ h1{
     padding: 0px 0px 25px 0px;
 }
 
-.hero-title{
+.hero-title {
     text-align: center;
+    font-family: 'Recursive', sans-serif;
+    color: #970404;
+    text-shadow: 2px 2px #fadae4;
     font-size: 2.5em;
-    font-weight: 900;
+    font-weight: bolder;
     padding-top: 20px;
+}
+
+.heading{
+    background-color: #4CAF50;
+    height: 100px;
+    /* padding-top:10px; */
 }
 
 .login-page {
@@ -25,8 +34,12 @@ h1{
   padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 50px;
 }
-.form input, textarea {
+
+
+
+.form input, textarea, select {
   font-family: "Roboto", sans-serif;
   outline: 0;
   background: #f2f2f2;
@@ -79,7 +92,7 @@ h1{
 .form .register-form {
   display: none;
 }
-.container {
+/* .container {
   position: relative;
   z-index: 1;
   max-width: 300px;
@@ -111,7 +124,7 @@ h1{
 }
 .container .info span .fa {
   color: #EF3B3A;
-}
+} */
 body {
   background: -webkit-linear-gradient(right, #fa4343, #fc8787);
   background: -moz-linear-gradient(right, #fa4343, #fc8787);
