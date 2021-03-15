@@ -76,7 +76,7 @@ h1{
 }
  
 
-body {
+html, body {
   background: -webkit-linear-gradient(right, #fa4343, #fc8787);
   background: -moz-linear-gradient(right, #fa4343, #fc8787);
   background: -o-linear-gradient(right, #fa4343, #fc8787);
