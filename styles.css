@@ -20,7 +20,7 @@ h1{
     /* padding-top:10px; */
 }
 
-.login-page {
+.main-page {
   width: 360px;
   padding: 8% 0 0;
   margin: auto;
@@ -89,9 +89,7 @@ h1{
   color: #4CAF50;
   text-decoration: none;
 }
-.form .register-form {
-  display: none;
-}
+
 /* .container {
   position: relative;
   z-index: 1;
