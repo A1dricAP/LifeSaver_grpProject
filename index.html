@@ -22,24 +22,20 @@
               Kindly register to save a life.
           </h1>
           <form >
-            <input type="text" placeholder="Name"/>
-            <input type="text" placeholder="Age"/>
-            <input type="text" placeholder="Weight"/>
+            <input class = 'combine' type="text" placeholder="Name"/>
+            <input class='combine' type="text" placeholder="Age"/>
+            <input class='combine' type="text" placeholder="Weight"/>
             <!-- adding radio buttons -->
-            <div style='margin-top: -15px;' class='radioInput'>
-              <p>Please select your gender:</p>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label><br>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label><br>
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other" >Other</label>
 
-                <br>
-            </div>
+            <p style="margin-top: 5px;">Select your gender</p>
+            <input type="radio" id="male" name='gender' >
+            <label for="female" >Male</label>
+            <input type="radio" id="female" name='gender'>
+            <label for="female">Female</label>
+
             <!-- **** -->
             <!-- adding drop down alternative -->
-            <select style="margin-top: 10px;" id = "myList">
+            <select class='combine' style="margin-top: 10px;" id = "myList">
               <option value = "1">Select your Gender</option>
               <option value = "2">Male</option>
               <option value = "3">Female</option>
@@ -47,24 +43,24 @@
             </select>
 
             <!-- **** -->
-            <select style='margin-top: 10px; '  id = "myList">
+            <select class='combine' style='margin-top: 10px; '  id = "myList">
                 <option value = "1">Select your Blood Group</option>
                 <option value = "2">one</option>
                 <option value = "3">two</option>
                 <option value = "4">three</option>
                 <option value = "5">four</option>
               </select>
-            <input type="text" placeholder="Mention any Alergies"/>
-            <input type="text" placeholder="Mention any Diseases"/>
-            <textarea placeholder="Other Information"></textarea>  
-           <select id = "countries" onchange="populateCities(this.value)">
+            <input class='combine' type="text" placeholder="Mention any Alergies"/>
+            <input class='combine' type="text" placeholder="Mention any Diseases"/>
+            <textarea class='combine' placeholder="Other Information"></textarea>  
+           <select class='combine' id = "countries" onchange="populateCities(this.value)">
                 <option value = "Select your Country">Select your Country</option>
               </select>
-            <select id = "cities">
+            <select class='combine' id = "cities">
                 <option value = "1">Select your City</option>
               </select>
-            <input type="number" placeholder="Phone Number"/>
-            <select id = "myList">
+            <input class='combine' type="number" placeholder="Phone Number"/>
+            <select class='combine' id = "myList">
                 <option value = "1">Select hospital</option>
                 <option value = "2">one</option>
                 <option value = "3">two</option>
@@ -72,16 +68,16 @@
                 <option value = "5">four</option>
               </select>
             <label style="padding-top: 10px;">Kindly choose date for checkup:</label>
-            <select id = "myList">
+            <select class='combine' id = "myList">
                 <option value = "1">Available Date</option>
                 <option value = "2">1/1/2021</option>
                 <option value = "3">2/1/2021</option>
                 <option value = "4">3/1/2021</option>
                 <option value = "5">4/1/2021</option>
               </select>
-            <textarea placeholder="Privacy Policy">Discuss and set up the privacy policy part.</textarea>
+            <textarea class='combine' placeholder="Privacy Policy">Discuss and set up the privacy policy part.</textarea>
             <label class="label">
-                <input type="checkbox" name="checkbox" value="text">Agree
+                <input class='combine' type="checkbox" name="checkbox" value="text">Agree
               </label>
             <button>Register</button>
           
