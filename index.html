@@ -25,7 +25,29 @@
             <input type="text" placeholder="Name"/>
             <input type="text" placeholder="Age"/>
             <input type="text" placeholder="Weight"/>
-            <select id = "myList">
+            <!-- adding radio buttons -->
+            <div style='margin-top: -15px;' class='radioInput'>
+              <p>Please select your gender:</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other" >Other</label>
+
+                <br>
+            </div>
+            <!-- **** -->
+            <!-- adding drop down alternative -->
+            <select style="margin-top: 10px;" id = "myList">
+              <option value = "1">Select your Gender</option>
+              <option value = "2">Male</option>
+              <option value = "3">Female</option>
+              <option value = "4">Other</option>
+            </select>
+
+            <!-- **** -->
+            <select style='margin-top: 10px; '  id = "myList">
                 <option value = "1">Select your Blood Group</option>
                 <option value = "2">one</option>
                 <option value = "3">two</option>
