@@ -11,7 +11,7 @@
     <title>Document</title>
 
 </head>
-<body>
+<body onload="script();">
     <div class="main-page">
         <div class="form">
           <img src="logo.png" width='100' height='100' style="margin-top: -20px; border-radius: 25px;"/>
@@ -57,19 +57,11 @@
             <input type="text" placeholder="Mention any Alergies"/>
             <input type="text" placeholder="Mention any Diseases"/>
             <textarea placeholder="Other Information"></textarea>  
-            <select id = "myList">
-                <option value = "1">Select your Country</option>
-                <option value = "2">one</option>
-                <option value = "3">two</option>
-                <option value = "4">three</option>
-                <option value = "5">four</option>
+           <select id = "countries" onchange="populateCities(this.value)">
+                <option value = "Select your Country">Select your Country</option>
               </select>
-            <select id = "myList">
+            <select id = "cities">
                 <option value = "1">Select your City</option>
-                <option value = "2">one</option>
-                <option value = "3">two</option>
-                <option value = "4">three</option>
-                <option value = "5">four</option>
               </select>
             <input type="number" placeholder="Phone Number"/>
             <select id = "myList">
@@ -79,7 +71,7 @@
                 <option value = "4">three</option>
                 <option value = "5">four</option>
               </select>
-            <label style="padding-top: 10px;">Kindly choose a date for checkup:</label>
+            <label style="padding-top: 10px;">Kindly choose date for checkup:</label>
             <select id = "myList">
                 <option value = "1">Available Date</option>
                 <option value = "2">1/1/2021</option>
