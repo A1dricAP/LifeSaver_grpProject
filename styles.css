@@ -2,22 +2,24 @@
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
-h1{
-    padding: 0px 0px 25px 0px;
+h1 {
+  padding: 0px 0px 25px 0px;
 }
-
 
 .hero-title {
-    text-align: center;
-    font-family: 'Recursive', sans-serif;
-    color: #970404;
-    text-shadow: 2px 2px #faa6c0;
-    font-size: 1.5em;
-    font-weight: bolder;
-    margin-top: 5px;
+  text-align: center;
+  font-family: "Recursive", sans-serif;
+  color: #970404;
+  text-shadow: 2px 2px #faa6c0;
+  font-size: 1.5em;
+  font-weight: bolder;
+  margin-top: 5px;
 }
 
-
+.styled {
+  background-color: #f2f2f2;
+  height: 50px;
+}
 
 .main-page {
   width: 360px;
@@ -27,16 +29,15 @@ h1{
 .form {
   position: relative;
   z-index: 1;
-  background: #FFFFFF;
+  background: #ffffff;
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
   text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.521), 0 15px 15px 0 rgba(48, 1, 1, 0.863);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.521),
+    0 15px 15px 0 rgba(48, 1, 1, 0.863);
   border-radius: 50px;
 }
-
-
 
 .form .combine {
   font-family: "Roboto", sans-serif;
@@ -57,7 +58,7 @@ h1{
   width: 100%;
   border: 0;
   padding: 15px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
@@ -65,21 +66,22 @@ h1{
 }
 
 .label {
-    background-color: #fff;
-    /* border: 1px solid #666; */
-    color: #000;
-    padding: 0px 150px 0px 0px;
-    text-align: center;
-    display: flex;
-    font-size: 1em;
-    margin: 15px;
-    cursor: pointer;
-  }
+  background-color: #fff;
+  /* border: 1px solid #666; */
+  color: #000;
+  padding: 0px 150px 0px 0px;
+  text-align: center;
+  display: flex;
+  font-size: 1em;
+  margin: 15px;
+  cursor: pointer;
+}
 
-.form button:hover,.form button:active,.form button:focus {
+.form button:hover,
+.form button:active,
+.form button:focus {
   background: #f0757b;
 }
- 
 
 body {
   background: -webkit-linear-gradient(right, #fa4343, #df3f3feb);
@@ -88,5 +90,5 @@ body {
   background: linear-gradient(to left, #fa4343, #df3f3feb);
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;      
+  -moz-osx-font-smoothing: grayscale;
 }
