@@ -49,10 +49,14 @@
 
             <select class='combine' style='margin-top: 20px; '  id = "myList">
                 <option value = "1">Select your Blood Group</option>
-                <option value = "2">one</option>
-                <option value = "3">two</option>
-                <option value = "4">three</option>
-                <option value = "5">four</option>
+                <option value = "A +ve">A +ve</option>
+                <option value = "A -ve">A -ve</option>
+                <option value = "B +ve">B +ve</option>
+                <option value = "B -ve">B -Ve</option>
+                <option value = "AB +ve">AB +ve</option>
+                <option value = "AB -ve">AB -Ve</option>
+				<option value = "O +ve">O +ve</option>
+                <option value = "O -ve">O -ve</option>
               </select>
             <input class='combine' type="text" placeholder="Mention any Alergies"/>
             <input class='combine' type="text" placeholder="Mention any Diseases"/>
@@ -60,24 +64,18 @@
            <select class='combine' id = "countries" onchange="populateCities(this.value)">
                 <option value = "Select your Country">Select your Country</option>
               </select>
-            <select class='combine' id = "cities">
+            <select class='combine' id = "cities" onchange="populateHospitals(this.value)">
                 <option value = "1">Select your City</option>
               </select>
+			 
             <input class='combine' type="number" placeholder="Phone Number"/>
-            <select class='combine' id = "myList">
+			 <label style="padding-top: 10px;">Kindly choose a hospital for checkup:</label>
+            <select class='combine' id = "hospitals">
                 <option value = "1">Select hospital</option>
-                <option value = "2">one</option>
-                <option value = "3">two</option>
-                <option value = "4">three</option>
-                <option value = "5">four</option>
               </select>
             <label style="padding-top: 10px;">Kindly choose date for checkup:</label>
-            <select class='combine' id = "myList">
+            <select class='combine' id = "dateList">
                 <option value = "1">Available Date</option>
-                <option value = "2">1/1/2021</option>
-                <option value = "3">2/1/2021</option>
-                <option value = "4">3/1/2021</option>
-                <option value = "5">4/1/2021</option>
               </select>
             <textarea class='combine' placeholder="Privacy Policy">Discuss and set up the privacy policy part.</textarea>
             <label class="label">
