@@ -30,7 +30,7 @@ function script() {
 const currentDate = new Date();
 
 
-	let dates = document.getElementById("dateList");
+	let dates = document.getElementById("appoinmentDate");
 	for (i=0;i<10;i++) {
 		currentDate.setDate(currentDate.getDate() + 1);
 		let option = document.createElement("option");
@@ -44,9 +44,9 @@ console.log(currentDate.toLocaleDateString());
 }
 
 function populateCities(country) {
-	let city = document.getElementById("cities");
+	let city = document.getElementById("city");
 	city.options.length = 0;
-	let hospital = document.getElementById("hospitals");
+	let hospital = document.getElementById("hospital");
 	hospital.options.length = 0;
 	for (const val of cities[country]) {
 		let option = document.createElement("option");
@@ -59,7 +59,7 @@ function populateCities(country) {
 }
 
 function populateHospitals(city) {
- 	let hospital = document.getElementById("hospitals");
+ 	let hospital = document.getElementById("hospital");
 	hospital.options.length = 0;
  	for (const val of hospitals[city]) {
 		let option = document.createElement("option");
@@ -69,10 +69,17 @@ function populateHospitals(city) {
 	}  
 }
 
+function test() {
+
+addUserInfo(document.getElementById("name").value, document.getElementById("gender").value, document.getElementById("age").value, document.getElementById("weight").value, document.getElementById("bloodGroup").value
+, document.getElementById("allergies").value, document.getElementById("healthProblem").value, document.getElementById("otherInfo").value, document.getElementById("countries").value, document.getElementById("city").value, document.getElementById("phone").value, document.getElementById("hospital").value, document.getElementById("appoinmentDate").value);
+console.log(userInfo);
+alert("Registration Successful");
+return false;
+}
+
 const userInfo = [];
-addUserInfo("n1", "m", 44, 66, "O+ve", "no", "no", "no", "UK", "cardiff", 9149943, "abc hos", "12.12.20");
-addUserInfo("n2", "m", 41, 67, "O-ve", "no", "no", "no", "US", "Texas", 9399343, "abc hos", "12.12.20");
-addUserInfo("n3", "m", 44, 66, "A+ve", "no", "no", "no", "India", "Chennai", 9994233, "abc hos", "12.12.20");
+
 
 function addUserInfo(name, gender, age, weight, bloodGroup, allergies, healthProblem, otherInfo, country, city, phone, hospital, appoinmentDate) {
 	user = {};
@@ -90,5 +97,5 @@ function addUserInfo(name, gender, age, weight, bloodGroup, allergies, healthPro
 	user.hospital = hospital;
 	user.appoinmentDate = appoinmentDate;
 	userInfo.push(user);
+	return false;
 }
-console.log(userInfo);

@@ -22,32 +22,19 @@
               Kindly register to save a life.
           </h1>
           <form >
-            <input class = 'combine' type="text" placeholder="Name"/>
-            <input class='combine' type="text" placeholder="Age"/>
-            <input style='margin-bottom: 20px; ' class='combine' type="text" placeholder="Weight"/>
+            <input class = 'combine' type="text" id="name" placeholder="Name"/>
+            <input class='combine' type="text" id="age" placeholder="Age"/>
+            <input style='margin-bottom: 20px;' id="weight" class='combine' type="text" placeholder="Weight"/>
             <!-- adding radio buttons -->
             <div class='styled'>
             <label>Gender: </label>
-            <input style="margin-top: 20px;" type="radio" id="male" name='gender' >
+            <input style="margin-top: 20px;" type="radio" id="gender" name='gender' value="male">
             <label  for="male" >Male</label>
-            <input  type="radio" id="female" name='gender'>
+            <input  type="radio" id="gender" name='gender' value="female">
             <label  for="female">Female</label>
             </div>
-            
-
-            <!-- **** -->
-
-            <!-- adding drop down alternative -->
-            <!-- <select class='combine' style="margin-top: 10px;" id = "myList">
-              <option value = "1">Select your Gender</option>
-              <option value = "2">Male</option>
-              <option value = "3">Female</option>
-              <option value = "4">Other</option>
-            </select> -->
-
-            <!-- **** -->
-
-            <select class='combine' style='margin-top: 20px; '  id = "myList">
+			
+            <select class='combine' style='margin-top: 20px;'  id = "bloodGroup">
                 <option value = "1">Select your Blood Group</option>
                 <option value = "A +ve">A +ve</option>
                 <option value = "A -ve">A -ve</option>
@@ -58,30 +45,31 @@
 				<option value = "O +ve">O +ve</option>
                 <option value = "O -ve">O -ve</option>
               </select>
-            <input class='combine' type="text" placeholder="Mention any Alergies"/>
-            <input class='combine' type="text" placeholder="Mention any Diseases"/>
-            <textarea class='combine' placeholder="Other Information"></textarea>  
+			  
+            <input class='combine' type="text" id="allergies" placeholder="Mention any Alergies"/>
+            <input class='combine' type="text" id="healthProblem"   placeholder="Mention any Diseases"/>
+            <textarea class='combine' id="otherInfo" placeholder="Other Information"></textarea>  
            <select class='combine' id = "countries" onchange="populateCities(this.value)">
                 <option value = "Select your Country">Select your Country</option>
               </select>
-            <select class='combine' id = "cities" onchange="populateHospitals(this.value)">
+            <select class='combine' id = "city" onchange="populateHospitals(this.value)">
                 <option value = "1">Select your City</option>
               </select>
 			 
-            <input class='combine' type="number" placeholder="Phone Number"/>
+            <input class='combine' type="number" id="phone" placeholder="Phone Number"/>
 			 <label style="padding-top: 10px;">Kindly choose a hospital for checkup:</label>
-            <select class='combine' id = "hospitals">
+            <select class='combine' id = "hospital">
                 <option value = "1">Select hospital</option>
               </select>
             <label style="padding-top: 10px;">Kindly choose date for checkup:</label>
-            <select class='combine' id = "dateList">
+            <select class='combine' id = "appoinmentDate">
                 <option value = "1">Available Date</option>
               </select>
             <textarea class='combine' placeholder="Privacy Policy">Discuss and set up the privacy policy part.</textarea>
             <label class="label">
                 <input class='combine' type="checkbox" name="checkbox" value="text">Agree
               </label>
-            <button>Register</button>
+            <button onclick="test();return false;">Register</button>
           
           </form>
         </div>
