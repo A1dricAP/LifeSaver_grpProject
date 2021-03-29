@@ -22,9 +22,9 @@
               Kindly register to save a life.
           </h1>
           <form >
-            <input class = 'combine' type="text" id="name" placeholder="Name"/>
-            <input class='combine' type="text" id="age" placeholder="Age"/>
-            <input style='margin-bottom: 20px;' id="weight" class='combine' type="text" placeholder="Weight"/>
+            <input class = 'combine' type="text" maxlength="25" id="name" placeholder="Name" required/>
+            <input class='combine' type="number" id="age" placeholder="Age" required/>
+            <input style='margin-bottom: 20px;' id="weight" class='combine' type="number" placeholder="weight" required/>
             <!-- adding radio buttons -->
             <div class='styled'>
             <label>Gender: </label>
@@ -46,7 +46,7 @@
                 <option value = "O -ve">O -ve</option>
               </select>
 			  
-            <input class='combine' type="text" id="allergies" placeholder="Mention any Alergies"/>
+            <input class='combine' type="text" id="allergies" placeholder="Mention any Alergies" />
             <input class='combine' type="text" id="healthProblem"   placeholder="Mention any Diseases"/>
             <textarea class='combine' id="otherInfo" placeholder="Other Information"></textarea>  
            <select class='combine' id = "countries" onchange="populateCities(this.value)">
@@ -131,7 +131,7 @@ You may also set your browser to block all cookies or to indicate when a cookie 
             <label class="label">
                 <input class='combine' type="checkbox" name="checkbox" value="text">Agree
               </label>
-            <button onclick="test();return false;">Register</button>
+            <button type="submit" onclick="test();return false;">Register</button>
           
           </form>
         </div>

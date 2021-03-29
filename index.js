@@ -74,7 +74,7 @@ function test() {
 addUserInfo(document.getElementById("name").value, document.getElementById("gender").value, document.getElementById("age").value, document.getElementById("weight").value, document.getElementById("bloodGroup").value
 , document.getElementById("allergies").value, document.getElementById("healthProblem").value, document.getElementById("otherInfo").value, document.getElementById("countries").value, document.getElementById("city").value, document.getElementById("phone").value, document.getElementById("hospital").value, document.getElementById("appoinmentDate").value);
 console.log(userInfo);
-alert("Registration Successful");
+
 return false;
 }
 
@@ -82,6 +82,7 @@ const userInfo = [];
 
 
 function addUserInfo(name, gender, age, weight, bloodGroup, allergies, healthProblem, otherInfo, country, city, phone, hospital, appoinmentDate) {
+	if(name != null && gender != null && age && weight && bloodGroup && country && city && phone && hospital && appoinmentDate){
 	user = {};
 	user.name = name;
 	user.gender = gender;
@@ -97,5 +98,9 @@ function addUserInfo(name, gender, age, weight, bloodGroup, allergies, healthPro
 	user.hospital = hospital;
 	user.appoinmentDate = appoinmentDate;
 	userInfo.push(user);
+		alert("Registration Successful");
+	}
+	else
+		alert("please fill all the columns");
 	return false;
 }

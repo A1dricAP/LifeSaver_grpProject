@@ -1,0 +1,62 @@
+<!-- new html file -->
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="index.js"></script>
+    <title>Document</title>
+
+</head>
+<body onload="script();">
+    <div class="main-page">
+        <div class="form">
+          <img src="logo.png" width='100' height='100' style="margin-top: -20px; border-radius: 25px;"/>
+          <p class='hero-title'>
+            LIFE SAVER
+        </p>
+          <h1>
+              Request blood from doners.
+          </h1>
+          <form >
+            <input class = 'combine' type="text" id="name" placeholder="Contact person's name"/>
+
+            <!-- adding radio buttons -->
+
+			
+            <select class='combine' style='margin-top: 20px;'  id = "bloodGroup">
+                <option value = "1">Select your Blood Group</option>
+                <option value = "A +ve">A +ve</option>
+                <option value = "A -ve">A -ve</option>
+                <option value = "B +ve">B +ve</option>
+                <option value = "B -ve">B -Ve</option>
+                <option value = "AB +ve">AB +ve</option>
+                <option value = "AB -ve">AB -Ve</option>
+				<option value = "O +ve">O +ve</option>
+                <option value = "O -ve">O -ve</option>
+              </select>
+			  
+            <input class='combine' type="text" id="purpose"   placeholder="Mention the purpose"/>
+            <textarea class='combine' id="otherInfo" placeholder="Other Information(optional)"></textarea>
+           <select class='combine' id = "countries" onchange="populateCities(this.value)">
+                <option value = "Select your Country">Select your Country</option>
+              </select>
+            <select class='combine' id = "city" onchange="populateHospitals(this.value)">
+                <option value = "1">Select your City</option>
+              </select>
+			<label style="padding-top: 10px;">Kindly choose a hospital patient admitted:</label>
+            <select class='combine' id = "hospital">
+                <option value = "1">Select hospital</option>
+              </select>
+            <input class='combine' type="number" id="phone" placeholder="Phone Number"/>
+
+            <button onclick="alert('A notification has sent to all doners. Please wait for the call back from doner');return false;">Request Blood</button>
+          
+          </form>
+        </div>
+      </div>
+</body>
+</html>
